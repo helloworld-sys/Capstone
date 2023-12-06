@@ -30,7 +30,7 @@ The application aims to solve the real-world problem of providing small construc
 
 # Attributes:
 
-- **Color Palette:** **Gold** (#FFD700) symbolizes **value**, **Slate Gray**(#708090) symbolizes **stability** , **Steel Blue**(#004080) symbolizes **professionalism** and **trust**.
+- **Color Palette:** **Gold** (#d5b263) symbolizes **value**, **Slate Gray**(#708090) symbolizes **stability** , **Steel Blue**(#293040) symbolizes **professionalism** and **trust**.
 - **Images:** Sourced from Pexels, focusing on St. Louis construction scenes.
 - **Fonts:** Roboto Slab.
 - **Logos:** Social media logos (Instagram, LinkedIn, Facebook) and a company logo.

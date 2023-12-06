@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #708090;/*incase the image does not load */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/St.Louis1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+/* .navbar:hover{                  Finish text hover translate.
+  transform: translateY(-10px);
+} */
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  padding: 12px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .5s;
+}
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+}
+h1 {
+  color: #ffff;
+  font-size: 100px;
+}
+p {
+  color: #ffff;
+  font-size: 11px;
+  line-height: 15px;
+}
+button {
+  width: 180px;
+  color: #000;
+  padding: 12px;
+  background: #ffff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+
+}
+/* .banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #708090;
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+  background-position: center;
+  background-size: center;
+}
+nav {
+  width: 90%;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 160px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+li a:hover{
+  background: white;
+  transition: 0.5s;
+}
+nav a:hover{
+  color: black;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.content h1{
+  margin-top: 80px;
+  font-size: 90px;
+  font-weight: 800;
+} */
+
