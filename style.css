@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
@@ -11,16 +12,21 @@ header {
   padding: 30px 10%;
 
 }
-.container {
+#jumbotron {
   width: 100%;
   height: 100vh;
   background-color: #708090;/*incase the image does not load */
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/St.Louis1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/St.Louis1.jpg);
   background-position: center;
   background-size: cover;
   padding-left: 8%;
   padding-right: 8%;
   box-sizing: border-box;
+}
+#logo {
+  color: #ffffff;
+  font-size: 100px;
+  padding-top: 25%;
 }
 .navbar {
   height: 12%;
@@ -39,6 +45,7 @@ ul > li > a:hover {
   cursor: pointer;
 }
 nav{
+  background: #708090;
   flex: 1;
   text-align: right;
 }
@@ -56,6 +63,21 @@ nav > ul > li > a {
   cursor: pointer;
   transition: .5s;
 }
+#about {
+width: 100%;
+height: 100vh;
+background-color: #708090;/*incase the image does not load */
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/Commercial.jpg);
+background-position: center;
+background-size: cover;
+padding-left: 8%;
+padding-right: 8%;
+box-sizing: border-box;
+}
+#about > p {
+  color: white;
+  font-size: 1em;
+}
 .row {
   display: flex;
   height: 88%;
@@ -64,10 +86,6 @@ nav > ul > li > a {
 .col {
   flex-basis: 50%;
 }
-h1 {
-  color: #ffff;
-  font-size: 100px;
-}
 p {
   color: #ffff;
   /* font-size: 10px;
@@ -75,14 +93,35 @@ p {
   font-size: 40px;
 }
 button {
-  width: 180px;
-  color: #000;
-  padding: 12px;
-  background: #ffff;
-  border: 0;
-  border-radius: 20px;
-  outline: none;
-  margin-top: 30px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: black;
+  border: none;
+  background-color: white;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  color: white;
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+button > a {
+  text-decoration: none;
+  color: black;
 }
 @media (min-width: 550px) {
   nav > .fa-bars {
@@ -95,4 +134,5 @@ button {
     display: none;
   }
 }
+
 

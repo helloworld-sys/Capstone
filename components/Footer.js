@@ -1,6 +1,4 @@
 import html from "html-literal";
 export default () => html`
-  <footer>
-    <p>This will be something about the company</p>
-  </footer>
+  <footer>&copy; 2023 <a href="">Global Internaltion LLC</a></footer>
 `;
