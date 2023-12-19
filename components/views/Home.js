@@ -5,9 +5,11 @@ export default () => html`
     <section id="jumbotron">
       <h2 id="logo">Global International LLC</h2>
       <!-- <a href="index.html">"Call to Action" "Button"</a> -->
-      <button class="buttonMain" type="button">
-        <a href="Appraisal.js">Request Quote</a>
-      </button>
+      <a href="Quote"
+        ><button class="buttonMain" type="button">
+          Request Quote
+        </button></a
+      >
     </section>
   </div>
 `;
