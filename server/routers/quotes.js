@@ -38,7 +38,7 @@ router.get("/", async (request, response) => {
     return response.status(500).json(error.errors);
   }
 });
-// Get a single pizza by ID
+// Get a single quote by ID
 router.get("/:id", async (request, response) => {
   try {
     const data = await Quote.findById(request.params.id);
