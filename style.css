@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+
+}
+#jumbotron {
+  width: 100%;
+  height: 100vh;
+  background-color: #708090;/*incase the image does not load */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/St.Louis1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+#logo {
+  color: #ffffff;
+  font-size: 100px;
+  padding-top: 25%;
+}
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+ul > li > a:hover {
+  transform: translate(10px);
+}
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+}
+nav{
+  background: #708090;
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  padding: 12px;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 6vh;
+  cursor: pointer;
+  transition: .5s;
+}
+#about {
+width: 100%;
+height: 100vh;
+background-color: #708090;/*incase the image does not load */
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/Commercial.jpg);
+background-position: center;
+background-size: cover;
+padding-left: 8%;
+padding-right: 8%;
+box-sizing: border-box;
+}
+#about > p {
+  color: white;
+  font-size: 1em;
+}
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col {
+  flex-basis: 50%;
+}
+p {
+  color: #ffff;
+  /* font-size: 10px;
+  line-height: 15px; */
+  font-size: 40px;
+}
+button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: black;
+  border: none;
+  background-color: white;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  color: white;
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 550px) {
+  nav > .fa-bars {
+    display: none;
+  }
+}
+/* in HTML: <ul class="hidden--mobile"> */
+@media (max-width: 549px) {
+  .hidden--mobile {
+    display: none;
+  }
+}
+
+
