@@ -1,4 +1,4 @@
-import { Header, Nav, Main, Footer } from "./components";
+import { Nav, Main, Footer } from "./components";
 import * as store from "./store";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
@@ -59,6 +59,8 @@ router.hooks({
             done();
           });
         break;
+      default:
+        done();
       // Add a case for each view that needs data from an API
     }
   },
