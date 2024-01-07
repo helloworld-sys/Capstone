@@ -6,8 +6,8 @@ export default () => html`
     <p>* = required</p>
     <form id="quote" method="POST" action="">
       <div>
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <label for="name">First Name*</label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
       </div>
       <div>
         <label for="address">Street Address*</label>
@@ -15,25 +15,18 @@ export default () => html`
           type="text"
           id="address"
           name="address"
-          placeholder="Street Address"
+          placeholder="Street Name"
         />
-      </div>
-      <div>
-        <label for="city">City*</label>
-        <input type="text" id="city" name="city" placeholder="" />
       </div>
       <div>
         <label for="state">State*</label>
         <input type="text" id="state" name="state" placeholder="" />
       </div>
       <div>
-        <label for="email">Email*</label>
-        <input type="text" id="email" name="email" placeholder="" />
-      </div>
-      <div>
         <label for="state">Phone*</label>
         <input type="text" id="fone" name="fone" placeholder="" />
       </div>
+      <input type="submit" name="submit" value="Submit Quote" />
     </form>
   </section>
 `;

@@ -14,14 +14,59 @@ function render(state = store.Home) {
     `;
 
   router.updatePageLinks();
-  afterRender();
+  afterRender(state);
 }
 
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+
+  if (state.view === "Home") {
+    // Do this stuff
+    document
+      .getElementById("getQuoteButton")
+      .addEventListener("click", event => {
+        event.preventDefault();
+
+        router.navigate("/quote");
+      });
+  }
+
+  if (state.view === "Quote") {
+    // Add an event handler for the submit button on the form
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      // Get the form element
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+
+      // Create a request body object to send to the API
+      const requestData = {
+        customer: inputList.customer.value,
+        state: inputList.state.value,
+        address: inputList.address.value,
+        fone: inputList.fone.value
+      };
+      // Log the request body to the console
+      console.log("request Body", requestData);
+
+      axios
+        // Make a POST request to the API to create a new quote
+        .post(`${process.env.PIZZA_PLACE_API_URL}/pizzas`, requestData)
+        .then(response => {
+          //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+          store.Pizza.pizzas.push(response.data);
+          router.navigate("/Pizza");
+        })
+        // If there is an error log it to the console
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 
 router.hooks({

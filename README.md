@@ -3,10 +3,10 @@ Definition Statement:
 I aim to develop a web application that enables clients to effortlessly browse a company page, facilitating the scheduling of appointments and communication through the platform.
 
 Audience:
-The primary audience for this project is the construction company for which the web application is being developed.
+The primary audience for this project is the Appraisal Company for which the web application is being developed.
 
 Users:
-Clients seeking a property appraisal services, who will utilize the application to find and engage with a suitable construction company for their needs.
+Clients seeking a property appraisal services, who will utilize the application to find and engage with the tax sale company for their needs.
 
 Content Outline:
 Pages and Elements:
@@ -47,7 +47,7 @@ Disliked: [Specify].
 Liked: Ease of use.
 Disliked: [Specify].
 Differentiation:
-While maintaining ease of use, the application will stand out by addressing the specific needs of the construction industry.
+While maintaining ease of use, the application will stand out by addressing the specific needs of the client.
 
 Wireframes:
 Home

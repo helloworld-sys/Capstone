@@ -37,7 +37,7 @@ export default () => html`
       and a genuine commitment to achieving the best possible results for every
       client.
     </p>
-    <h2>Services</h2>
+    <h2>Our Services</h2>
     <h3>Consultation and Advisory</h3>
     <p>
       Whether you are a seasoned investor or a first-time buyer, Global
