@@ -10,8 +10,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
-
 }
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 6.74rem;
+  box-sizing: inherit;
+}
+
+
 #jumbotron {
   width: 100%;
   height: 100vh;
@@ -23,6 +35,8 @@ header {
   padding-right: 8%;
   box-sizing: border-box;
 }
+
+
 #logo {
   color: #ffffff;
   font-size: 100px;
@@ -64,6 +78,7 @@ nav > ul > li > a {
   transition: .5s;
 }
 #about {
+text-align: center;
 width: 100%;
 height: 100vh;
 background-color: #708090;/*incase the image does not load */
@@ -74,10 +89,7 @@ padding-left: 8%;
 padding-right: 8%;
 box-sizing: border-box;
 }
-#about > p {
-  color: white;
-  font-size: 1em;
-}
+
 .row {
   display: flex;
   height: 88%;
@@ -88,10 +100,13 @@ box-sizing: border-box;
 }
 p {
   color: #ffff;
-  /* font-size: 10px;
-  line-height: 15px; */
-  font-size: 40px;
+  font-size: 1em;
 }
+
+
+/* Styling for Homepage Button */
+
+
 button {
   font-family: inherit;
   font-weight: 500;
@@ -128,7 +143,7 @@ button > a {
     display: none;
   }
 }
-/* in HTML: <ul class="hidden--mobile"> */
+
 @media (max-width: 549px) {
   .hidden--mobile {
     display: none;
@@ -136,3 +151,111 @@ button > a {
 }
 
 
+/* Styling for footer */
+
+
+footer{
+  background-color: #708090;
+  padding: 70px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footerContainer{
+  align-items: top;
+  max-width: 1170px;
+  background-color: #708090;
+  margin: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #fffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position:absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width:  40px;
+  background-color: rgba(255, 255, 255, .2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5 ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media(max-width: 767px){
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width: 574px){
+  .footer-col {
+    width: 100%;
+  }
+}
+#copywrite{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+
+}
+
+
+/* ABOUT US PAGE */
+
+#about {
+  color: #ffffff;
+}

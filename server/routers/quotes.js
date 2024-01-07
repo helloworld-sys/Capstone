@@ -66,4 +66,35 @@ router.delete("/:id", async (request, response) => {
   }
 });
 
+// Update a single pizza by ID
+router.put("/:id", async (request, response) => {
+  try {
+    const body = request.body;
+
+    const data = await Quote.findByIdAndUpdate(
+      request.params.id,
+      {
+        $set: {
+          state: body.state,
+          address: body.address,
+          fone: body.fone
+        }
+      },
+      {
+        new: true
+      }
+    );
+
+    response.json(data);
+  } catch (error) {
+    // Output error to the console incase it fails to send in response
+    console.log(error);
+
+    if ("name" in error && error.name === "ValidationError")
+      return response.status(400).json(error.errors);
+
+    return response.status(500).json(error.errors);
+  }
+});
+
 export default router;

@@ -4,22 +4,21 @@ const quoteSchema = new mongoose.Schema({
   customer: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[A-Za-z ]*$/
   },
   state: {
     type: String,
     required: true
   },
-  city: {
+  address: {
     type: String,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  phone: {
+  fone: {
     type: String,
     required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[0-9]*$/
   }
-  // toppings: [String]
 });
 
 const Quote = mongoose.model("Quote", quoteSchema);
