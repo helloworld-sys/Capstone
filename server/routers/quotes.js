@@ -4,7 +4,7 @@ import Quote from "../models/Quote.js";
 const router = Router();
 
 // Good stuff goes here
-// Create pizza route
+// Create quote route
 router.post("/", async (request, response) => {
   try {
     const newQuote = new Quote(request.body);
@@ -66,7 +66,7 @@ router.delete("/:id", async (request, response) => {
   }
 });
 
-// Update a single pizza by ID
+// Update a single quote by ID
 router.put("/:id", async (request, response) => {
   try {
     const body = request.body;

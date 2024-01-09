@@ -4,7 +4,6 @@ import commercial from "../../assets/img/Commercial.jpg";
 export default () => html`
   <section id="about">
     <h1>Global International LLC.</h1>
-    <!-- <img src=${commercial} alt="Commercial buildings" /> -->
     <h2>Who Are We?</h2>
     <p>
       Welcome to Global International LLC, your trusted partner in the realm of

@@ -12,16 +12,18 @@ export default () => html`
           </ul>
         </div>
         <div class="footer-col">
-          <h4>get quote</h4>
+          <h4>appraisals</h4>
           <ul>
-            <li><a href="./Quote">request a new quote</a></li>
-            <li><a href="./Quote">whats my quote status</a></li>
+            <li><a href="./Quote">commercial</a></li>
+            <li><a href="./Quote">residential</a></li>
+            <li><a href="./Quote">scheduling</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>leave review</h4>
+          <h4>Legal</h4>
           <ul>
-            <li><a href="#">leave us a review</a></li>
+            <li><a href="#">our team</a></li>
+            <li><a href="#">request consultation</a></li>
           </ul>
         </div>
         <div class="footer-col">
