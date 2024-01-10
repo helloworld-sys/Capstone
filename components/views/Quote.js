@@ -6,8 +6,13 @@ export default () => html`
     <p>* = required</p>
     <form id="quote" method="POST" action="">
       <div>
-        <label for="name">First Name*</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name" />
+        <label for="customer">First Name*</label>
+        <input
+          type="text"
+          id="customer"
+          name="customer"
+          placeholder="First Name"
+        />
       </div>
       <div>
         <label for="address">Street Address*</label>
