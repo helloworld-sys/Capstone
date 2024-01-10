@@ -57,8 +57,8 @@ function afterRender(state) {
         // Make a POST request to the API to create a new quote
         .post(`${process.env.GET_QUOTE_ENTRY_API}/quotes`, requestData)
         .then(response => {
-          //  Then push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
-          store.Pizza.pizzas.push(response.data);
+          //  Then push the new quote onto the Quote state quotes attribute, so it can be displayed in the quote list
+          store.Quote.quotes.push(response.data);
           router.navigate("/Quote");
         })
         // If there is an error log it to the console
