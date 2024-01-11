@@ -17,7 +17,7 @@ const quoteSchema = new mongoose.Schema({
   fone: {
     type: String,
     required: true,
-    validate: ^[0-9]{3}-[0-9]{3}-[0-9]{4}$
+    validate: /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
   }
 });
 
