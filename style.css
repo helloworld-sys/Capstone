@@ -21,6 +21,13 @@ body{
   min-height: 100%;
   padding-bottom: 6.74rem;
   box-sizing: inherit;
+  background-color: white;
+}
+#jumbotron h1{
+  margin-top: 0;
+  justify-content: start;
+  border-bottom: white;
+  color: white
 }
 
 
@@ -31,7 +38,7 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/St.Louis1.jpg);
   background-position: center;
   background-size: cover;
-  padding-left: 8%;
+  padding-left: 0;
   padding-right: 8%;
   box-sizing: border-box;
 }
@@ -113,7 +120,7 @@ button {
   font-size: 16px;
   padding: 0.7em 1.4em 0.7em 1.1em;
   color: black;
-  border: none;
+  border-color: black;
   background-color: white;
   letter-spacing: 0.05em;
   border-radius: 20em;
@@ -158,6 +165,7 @@ footer{
   background-color: #708090;
   padding: 70px 0;
   position: absolute;
+  height: 25%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -253,6 +261,64 @@ align-items: flex-start;
   justify-content: center;
   margin-top: 30px;
 }
+/* CONTACT US STYLING */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact h2 {
+  color: black;
+  padding-top: 10px;
+  font-size: 60px;
+}
+
+input {
+  background-color: white;
+  width: 70%;
+  margin-left: 12%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #000000;
+  margin-bottom: 20px;
+}
+select {
+background-color: white;
+width: 70%;
+margin-left: 12%;
+font-size: 20px;
+padding: 16px 16px;
+border-radius: 10px;
+border-color: #000000;
+margin-bottom: 20px;}
+
+textarea {
+  background-color: white;
+  width: 70%;
+  margin-right: 12%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: #000000;
+  margin-bottom: 25px;
+}
+
+input:focus-within {
+  outline: none;
+  border-color: #BF5700;
+  border-width: 3px;
+}
+
+textarea:focus-within {
+  outline: none;
+  border-color: #BF5700;
+  border-width: 3px;
+}
 
 
 /* ABOUT US PAGE */
@@ -260,3 +326,4 @@ align-items: flex-start;
 #about {
   color: #ffffff;
 }
+

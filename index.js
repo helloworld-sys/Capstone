@@ -57,6 +57,7 @@ function afterRender(state) {
         // Make a POST request to the API to create a new quote
         .post(`${process.env.GET_QUOTE_ENTRY_API}/quotes`, requestData)
         .then(response => {
+          console.log("I worked!");
           //  Then push the new quote onto the Quote state quotes attribute, so it can be displayed in the quote list
           store.Quote.quotes.push(response.data);
           router.navigate("/Quote");
