@@ -22,7 +22,10 @@ body{
   padding-bottom: 6.74rem;
   box-sizing: inherit;
   background-color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
+
 #jumbotron h1{
   margin-top: 0;
   justify-content: start;
@@ -66,7 +69,7 @@ ul > li > a:hover {
   cursor: pointer;
 }
 nav{
-  background: #708090;
+  background: white;
   flex: 1;
   text-align: right;
 }
@@ -75,26 +78,16 @@ nav ul li {
   display: inline-flex;
   justify-content: space-between;
   margin-left: 60px;
-  padding: 12px;
+  padding: .5rem;
+  border: 3px solid #BF5700;
+  border-radius: 25px;
 }
 nav > ul > li > a {
   text-decoration: none;
-  color: #000000;
+  color: black;
   font-size: 6vh;
   cursor: pointer;
   transition: .5s;
-}
-#about {
-text-align: center;
-width: 100%;
-height: 100vh;
-background-color: #708090;/*incase the image does not load */
-background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/Commercial.jpg);
-background-position: center;
-background-size: cover;
-padding-left: 8%;
-padding-right: 8%;
-box-sizing: border-box;
 }
 
 .row {
@@ -105,11 +98,6 @@ box-sizing: border-box;
 .col {
   flex-basis: 50%;
 }
-p {
-  color: #ffff;
-  font-size: 1em;
-}
-
 
 /* Styling for Homepage Button */
 
@@ -164,11 +152,12 @@ button > a {
 footer{
   background-color: #708090;
   padding: 70px 0;
-  position: absolute;
+  position: relative;
   height: 25%;
   left: 0;
   right: 0;
   bottom: 0;
+  margin-top: 0%;
 }
 
 .footerContainer{
@@ -176,6 +165,7 @@ footer{
   max-width: 1170px;
   background-color: #708090;
   margin: auto;
+  margin-bottom: 0%;
 }
 
 ul{
@@ -322,8 +312,32 @@ textarea:focus-within {
 
 
 /* ABOUT US PAGE */
-
 #about {
-  color: #ffffff;
-}
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 220vh;
+  margin-bottom: 0%;
+  background-color: #708090;/*incase the image does not load */
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/img/Commercial.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 0%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  }
 
+  p {
+    color: #ffff;
+    font-size: 1.3em;
+    line-height: 1.6;
+  }
+
+  h2{
+    font-size: 2em;
+    padding-top: 8px ;
+
+  }
+
+  h3{
+  }

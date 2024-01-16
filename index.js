@@ -53,6 +53,22 @@ function afterRender(state) {
       // Log the request body to the console
       console.log("request Body", requestData);
 
+      if (requestData.state.length !== 2) {
+        alert("Please select a State!");
+      }
+
+      if (requestData.customer.length === 0) {
+        alert("Name missing!");
+      }
+
+      if (requestData.address.length === 0) {
+        alert("Address missing!");
+      }
+
+      if (requestData.fone.length === 0) {
+        alert("Phone number missing!");
+      }
+
       axios
         // Make a POST request to the API to create a new quote
         .post(`${process.env.GET_QUOTE_ENTRY_API}/quotes`, requestData)

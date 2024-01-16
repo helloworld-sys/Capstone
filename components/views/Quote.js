@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
   <section id="contact">
-    <h1>Client Info</h1>
+    <h2>Client Info</h2>
     <p>* = required</p>
     <form id="quote" method="POST" action="">
       <label for="customer"></label>
